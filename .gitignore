@@ -1,0 +1,42 @@
+# ---------------------------------------------------------------
+# CLIENT DATA — never commit
+# ---------------------------------------------------------------
+data/*
+!data/README.md
+*.csv
+*.xlsx
+*.xls
+*.xlsm
+transcripts/
+*_transcript*
+*call*.txt
+
+# Allow the blank template only (force-add it):
+#   git add -f templates/RPC_Centre_Manager_TEMPLATE.xlsx
+!templates/*.xlsx
+
+# ---------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------
+# OS / editor
+# ---------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ---------------------------------------------------------------
+# Outputs that may contain real figures
+# ---------------------------------------------------------------
+outputs/
+*.png
+!docs/img/*.png
